@@ -1,0 +1,491 @@
+{
+  "setting": {
+    "title": "设置",
+    "appearance": {
+      "title": "外观",
+      "theme": {
+        "title": "主题",
+        "description": "更改应用程序的主题"
+      },
+      "language": {
+        "title": "语言",
+        "description": "更改应用程序的语言"
+      },
+      "background_image": {
+        "title": "背景图片",
+        "description": "更改应用程序的背景图片，也可以在文件缓存中选择",
+        "click_to_select": "点击选择"
+      },
+      "background_image_opacity": {
+        "title": "背景图片透明度",
+        "description": "更改背景图片的透明度"
+      }
+    },
+    "connection": {
+      "title": "连接",
+      "auto_join": {
+        "title": "自动加入",
+        "description": "应用程序启动时自动加入远程协助"
+      },
+      "stun_servers": {
+        "title": "STUN 服务器",
+        "description": "更改应用程序的 STUN 服务器，用于建立点对点连接"
+      },
+      "turn_servers": {
+        "title": "TURN 服务器",
+        "description": "用于中继，如果你希望在 NAT 环境下使用此应用程序，你可能需要设置 TURN 服务器，并在对方客户端中设置相同的 TURN 服务器"
+      },
+      "share_servers_with_others": {
+        "title": "分享服务器给其他人",
+        "description": "在生成加入 URL 时，分享 STUN 和 TURN 服务器给其他人"
+      },
+      "websocket_url": {
+        "title": "Websocket URL",
+        "description": "更改应用程序的 Websocket URL，此选项仅在后端为 WebSocket 时可用"
+      }
+    },
+    "sender": {
+      "title": "文件发送设置",
+      "enable_clipboard": {
+        "title": "启用剪贴板",
+        "description": "启用发送端的剪贴板传送功能，启用后，可以通过对聊天窗口按 Ctrl + V 发送剪贴板内容，移动端可以通过粘贴到信息输入框发送",
+        "unsupported": "剪贴板功能不受支持，请在安全的上下文中使用"
+      },
+      "num_channels": {
+        "title": "通道数",
+        "description": "更改发送端的通道数，适当调整可能可以提高传输速度"
+      },
+      "chunk_size": {
+        "title": "区块大小",
+        "description": "每个传输区块的大小"
+      },
+      "block_size": {
+        "title": "块大小",
+        "description": "每次发送的块大小"
+      },
+      "max_buffer_amount": {
+        "title": "最大缓冲区大小",
+        "description": "更改发送端的最大缓冲区大小"
+      },
+      "ordered": {
+        "title": "有序",
+        "description": "当启用时，发送端将按顺序发送块"
+      },
+      "compression_level": {
+        "title": "压缩级别",
+        "description": "更改发送端的压缩级别，0 表示无压缩，9 表示最大压缩，对于已压缩的文件，启用此选项可能会降低传输速度",
+        "no_compression": "0 (无压缩)"
+      },
+      "automatic_cache_deletion": {
+        "title": "自动删除缓存",
+        "description": "发送完成后自动删除缓存"
+      }
+    },
+    "receiver": {
+      "title": "文件接收设置",
+      "max_cached_chunks": {
+        "title": "最大缓存块数",
+        "description": "更改接收端的最大缓存块数"
+      },
+      "automatic_download": {
+        "title": "自动下载",
+        "description": "接收完成后自动下载"
+      }
+    },
+    "media": {
+      "title": "媒体设置",
+      "description": "更改应用程序的媒体设置",
+      "camera": {
+        "title": "摄像头",
+        "description": "更改应用程序的摄像头"
+      },
+      "microphone": {
+        "title": "麦克风",
+        "description": "更改应用程序的麦克风"
+      },
+      "speaker": {
+        "title": "扬声器",
+        "description": "更改应用程序的扬声器"
+      },
+      "request_permission": {
+        "camera_title": "请求摄像头权限",
+        "microphone_title": "请求麦克风权限",
+        "camera_success": "摄像头权限已授予",
+        "microphone_success": "麦克风权限已授予",
+        "description": "请求媒体权限以使用媒体设置，如果请求权限后无法选择媒体设备，请尝试刷新页面",
+        "fallback_description": "请允许浏览器使用摄像头和麦克风"
+      }
+    },
+    "advanced_settings": {
+      "title": "高级设置",
+      "advanced_connection": {
+        "title": "高级连接设置",
+        "relay_only": {
+          "title": "仅使用中继服务器",
+          "description": "启用后，应用程序将仅使用 TURN 服务器"
+        }
+      },
+      "advanced_sender": {
+        "title": "高级文件发送设置"
+      },
+      "advanced_receiver": {
+        "title": "高级文件接收设置"
+      },
+      "stream": {
+        "title": "视频通话设置",
+        "video_max_bitrate": {
+          "title": "视频最大比特率",
+          "description": "视频通话的最大比特率"
+        },
+        "audio_max_bitrate": {
+          "title": "音频最大比特率",
+          "description": "视频通话的音频最大比特率"
+        },
+        "degradation_preference": {
+          "title": "降级偏好",
+          "description": "在视频通话中，当网络条件较差时，应用程序将优先考虑视频质量还是帧率"
+        }
+      }
+    },
+    "about": {
+      "title": "关于",
+      "reset_options": "重置选项",
+      "clear_service_worker_cache": "清除 Service Worker 缓存"
+    }
+  },
+  "cache": {
+    "title": "文件缓存",
+    "usage": "已用 {{value}}, 总共 {{max}}, 剩余 {{remaining}}",
+    "search_input": "搜索缓存文件..."
+  },
+  "404": {
+    "title": "404 未找到",
+    "description": "页面未找到，路径为 {{path}}",
+    "home": "返回首页"
+  },
+  "client": {
+    "menu": {
+      "connect": "连接",
+      "connection_status": "连接状态",
+      "delete_client": "删除客户端",
+      "clipboard": "剪贴板",
+      "options": "选项",
+      "redirect": "连接后自动跳转"
+    },
+    "index": {
+      "edit_profile": "编辑资料",
+      "join_room": "加入远程协助",
+      "share_room": "分享远程协助",
+      "leave_room": "离开远程协助",
+      "mobile_tip": "提示：请点击右上角按钮创建或加入远程协助，点击头像分享远程协助",
+      "before_join": {
+        "title": "创建或连接到远程协助",
+        "description": "请点击按钮，创建一个新远程协助或连接到一个现有远程协助"
+      },
+      "connecting": {
+        "title": "连接中...",
+        "description": "请等待连接建立"
+      },
+      "after_join": {
+        "title": "已加入远程协助 {{room}}",
+        "description": "分享远程协助资料以邀请其他人加入远程协助",
+        "tip": "提示：在移动设备上点击头像以分享远程协助资料"
+      }
+    },
+    "message_editor": {
+      "placeholder": "Ctrl + Enter 或 Shift + Enter 发送消息",
+      "mobile_placeholder": "发送消息",
+      "paste_tip": "剪贴板粘贴已启用"
+    },
+    "sync": {
+      "title": "文件同步",
+      "menu": {
+        "refresh": "刷新",
+        "chat": "聊天"
+      }
+    },
+    "message_error": "发生错误"
+  },
+  "video": {
+    "title": "屏幕共享",
+    "device": {
+      "screen": "屏幕",
+      "camera": "摄像头"
+    },
+    "no_stream": "没有流",
+    "float": "浮动",
+    "global_mute": "全局静音",
+    "global_unmute": "全局取消静音",
+    "reset_layout": "重置布局",
+    "compact_layout": "紧凑布局",
+    "loading_state": {
+      "initial": "初始化中...",
+      "loading": "加载中...",
+      "canplay": "准备播放",
+      "playing": "播放中",
+      "waiting": "缓冲中...",
+      "stalled": "连接中断，正在重试...",
+      "error": "加载失败",
+      "retry": "重试"
+    }
+  },
+  "browser_unsupported": {
+    "title": "抱歉，您的浏览器不受支持",
+    "reasons": {
+      "browser_version_too_low": "您的浏览器版本过低",
+      "browser_does_not_support_webrtc": "您的浏览器不支持 WebRTC"
+    },
+    "description": "请使用现代浏览器，如 Chrome、Firefox、Safari、Edge 或 Opera。或者在您的浏览器中启用实验性的 WebRTC 功能",
+    "version_support_details": "版本支持详情",
+    "browser": "浏览器",
+    "version": "版本"
+  },
+  "common": {
+    "scan_qrcode_dialog": {
+      "title": "分享远程协助信息",
+      "description": "扫描二维码以连接到此远程协助",
+      "tip": "右键或长按复制链接",
+      "invite": "邀请你加入远程协助 {{room}}"
+    },
+    "theme_toggle": {
+      "light": "浅色模式",
+      "dark": "深色模式",
+      "system": "跟随系统"
+    },
+    "join_form": {
+      "title": "编辑远程协助信息",
+      "description": "在这里编辑远程协助信息，点击确定即可创建或加入远程协助。",
+      "client_id": {
+        "title": "客户端 ID (只读)",
+        "description": "远程协助的客户端 ID，代表你的身份"
+      },
+      "room_id": {
+        "title": "远程协助ID",
+        "description": "远程协助的ID"
+      },
+      "name": "名称",
+      "avatar_url": "头像 URL",
+      "password": {
+        "title": "远程协助密码",
+        "description": "可选，远程协助的密码，用于加密客户端之间的信令消息，防止其他人加入，你可以点击按钮生成一个墙密码",
+        "placeholder": "请输入远程协助密码（可选）"
+      },
+      "auto_join": "下次自动加入"
+    },
+    "confirm_delete_files_dialog": {
+      "title": "确认删除",
+      "description": "确认删除以下 {{count}} 个文件？"
+    },
+    "preview_dialog": {
+      "title": "预览",
+      "unsupported_file_type": "不支持的文件类型"
+    },
+    "send_item_preview_dialog": {
+      "title": "发送文件",
+      "description": "确认发送文件 {{fileName}} 给 {{name}}？",
+      "unsupported_file_type": "不支持的文件类型"
+    },
+    "reset_options_dialog": {
+      "title": "重置选项",
+      "description": "重置后将无法恢复，请谨慎操作",
+      "content": "这个操作会重置所有选项，但不会清除用户数据"
+    },
+    "clear_service_worker_cache_dialog": {
+      "title": "清除 Service Worker 缓存",
+      "description": "这个操作会清除 Service Worker 缓存",
+      "content": "如果你在页面更新后遇到问题，可以清除缓存后重试",
+      "reload": "清除后重新加载页面"
+    },
+    "file_table": {
+      "columns": {
+        "name": "名称",
+        "size": "大小",
+        "last_modified": "最后修改",
+        "status": "状态",
+        "created_at": "创建时间",
+        "mime_type": "MIME 类型",
+        "progress": "进度"
+      },
+      "status": {
+        "not_started": "未开始",
+        "stopped": "已停止",
+        "transferring": "传输中",
+        "merging": "合并中",
+        "complete": "已完成",
+        "incomplete": "未完成"
+      },
+      "filter": {
+        "clear_filters": "清空过滤器",
+        "selected": "已选"
+      },
+      "toggle_columns": "切换列",
+      "no_data": "没有数据"
+    },
+    "client_info_dialog": {
+      "title": "客户端 {{name}} 信息",
+      "status": "状态",
+      "client_id": "客户端 ID",
+      "created_at": "创建时间",
+      "stats_reports": "统计报告",
+      "candidate_type": "候选类型",
+      "leave": "离开"
+    },
+    "confirm_delete_client_dialog": {
+      "title": "删除客户端",
+      "description": "删除后将无法恢复，请谨慎操作",
+      "content": "确认删除和客户端 {{name}} 的所有聊天记录？"
+    },
+    "status": {
+      "online": "在线",
+      "connecting": "连接中",
+      "reconnecting": "重新连接中",
+      "offline": "离线",
+      "leave": "离开"
+    },
+    "action": {
+      "apply": "应用",
+      "copy": "复制",
+      "copy_link": "复制链接",
+      "copy_file_name": "复制文件名",
+      "copy_as_png": "复制为 PNG",
+      "copy_as_svg": "复制为 SVG",
+      "paste": "粘贴",
+      "delete": "删除",
+      "download": "下载",
+      "cancel": "取消",
+      "confirm": "确定",
+      "actions": "操作",
+      "open": "打开",
+      "change": "更改",
+      "close": "关闭",
+      "preview": "预览",
+      "send": "发送",
+      "view": "查看",
+      "reset": "重置",
+      "asc": "升序",
+      "desc": "降序",
+      "hide": "隐藏",
+      "set_as_background": "设置为背景",
+      "test": "测试",
+      "share": "分享",
+      "forward": "转发",
+      "request_download": "请求下载",
+      "resume": "恢复",
+      "add_folder": "添加文件夹",
+      "check_availability": "检查可用性",
+      "reload": "重新加载",
+      "mute": "静音",
+      "unmute": "恢复",
+      "select": "选择",
+      "settings": "设置",
+      "fullscreen": "全屏",
+      "exit_fullscreen": "退出全屏",
+      "switch_fullscreen": "切换全屏",
+      "picture_in_picture": "画中画",
+      "exit_picture_in_picture": "退出画中画",
+      "switch_picture_in_picture": "切换画中画",
+      "stop": "停止",
+      "pause": "暂停",
+      "continue": "继续",
+      "restore": "恢复",
+      "change_camera": "更换摄像头",
+      "open_camera": "打开摄像头",
+      "close_camera": "关闭摄像头"
+    },
+    "clipboard_history": {
+      "title": "剪贴板历史"
+    },
+    "forward_dialog": {
+      "title": "转发项目",
+      "placeholder": "查找客户端以转发...",
+      "no_results_found": "没有找到结果"
+    },
+    "about_dialog": {
+      "title": "关于 Weblink",
+      "description1": "Weblink 是一款基于浏览器的P2P聊天、文件传输、文件同步和屏幕共享工具。",
+      "description2": "它提供文件同步、进度显示、断点续传、文件夹传输、剪贴板传输、文件缓存、视频通话等多种功能。",
+      "description3": "此项目是纯Web应用，无需安装。功能较多实现比较复杂，如果遇到不稳定的情况，请尝试刷新页面，信息不会丢失。",
+      "disclaimer": "免责声明：此应用使用P2P技术，所有数据储存在用户客户端（浏览器）中，服务器不存储任何用户数据，只负责转发信令。用户应自行承担使用风险，开发者不对任何数据丢失或隐私泄露负责。",
+      "star_repo": "如果您喜欢这个项目，欢迎在 GitHub 上给我一个 ⭐！",
+      "version": "版本",
+      "author": "作者",
+      "license": "许可证",
+      "github": "GitHub 仓库"
+    },
+    "media_selection_dialog": {
+      "title": "媒体选择",
+      "screen": "屏幕",
+      "media_device": "媒体设备",
+      "camera": "摄像头",
+      "microphone": "麦克风",
+      "speaker": "扬声器",
+      "enable_screen": "启用屏幕",
+      "enable_camera": "启用摄像头",
+      "enable_microphone": "启用麦克风",
+      "enable_speaker": "启用扬声器",
+      "no_camera_available": "没有摄像头可用",
+      "no_microphone_available": "没有麦克风可用",
+      "no_speaker_available": "没有扬声器可用",
+      "request_camera_permission": "请求摄像头权限",
+      "request_microphone_permission": "请求麦克风权限",
+      "select_speaker": "选择扬声器 (自动)",
+      "select_microphone": "选择麦克风 (自动)",
+      "select_camera": "选择摄像头 (自动)",
+      "open_screen": "打开屏幕",
+      "open_media_device": "打开媒体设备",
+      "current": "当前",
+      "preview": "预览",
+      "apply_constraints": "应用媒体约束",
+      "apply_constraints_description": "某些约束可能不支持动态更改，请选择新的流以应用",
+      "preset_constraints": "预设媒体约束",
+      "microphone_constraints": "麦克风约束",
+      "speaker_constraints": "扬声器约束",
+      "not_support_display_media": "您的浏览器不支持屏幕共享",
+      "not_support_user_media": "您的浏览器不支持媒体设备",
+      "video_constraints": "视频约束",
+      "constraints": {
+        "noise_suppression": "噪音抑制",
+        "echo_cancellation": "回声消除",
+        "auto_gain_control": "自动增益控制",
+        "voice_isolation": "语音隔离",
+        "suppress_local_audio_playback": "抑制本地音频播放",
+        "max_frame_rate": "最大帧率"
+      }
+    },
+    "notification": {
+      "copy_success": "复制成功",
+      "link_copy_success": "链接复制成功",
+      "link_copy_failed": "链接复制失败",
+      "reset_options_success": "选项重置成功",
+      "unknown_error": "未知错误",
+      "processing_files": "处理文件中...",
+      "new_version_available": "新版本可用",
+      "share_failed": "分享失败，错误: {{error}}",
+      "clear_cache_success": "Cache Storage 和 Service Worker 清除成功",
+      "clear_cache_failed": "清除 Cache Storage 和 Service Worker 失败，错误: {{error}}"
+    },
+    "nav": {
+      "chat": "聊天",
+      "file_cache": "文件缓存",
+      "screen_sharing": "屏幕共享",
+      "settings": "设置",
+      "join_room": "加入远程协助",
+      "leave_room": "离开远程协助",
+      "share_link": "分享链接"
+    },
+    "timeago": {
+      "just_now": "刚刚"
+    },
+    "starter": {
+      "starter_name": "欢迎",
+      "welcome": "欢迎使用weblink，这是一个可以直接在浏览器中运行的聊天、文件传输、文件同步和屏幕共享工具。",
+      "tip1": "请按以下步骤开始：\n 1. 设置你的名称和头像。\n 2. 设置远程协助ID和密码以加密客户端之间的信令消息，防止其他人加入。\n 3. 分享远程协助资料以邀请其他人加入远程协助。",
+      "tip2": "如果遇到任何问题或有任何建议，请在GitHub上提交issue, 或加入QQ群反馈：762463759"
+    },
+    "error_boundary": {
+      "title": "发生错误",
+      "description": "请尝试刷新页面或联系开发者，错误信息如下：",
+      "reset": "重置"
+    }
+  }
+}

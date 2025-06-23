@@ -1,0 +1,484 @@
+{
+  "setting": {
+    "title": "Setting",
+    "appearance": {
+      "title": "Appearance",
+      "theme": {
+        "title": "Theme",
+        "description": "Change the theme of the app"
+      },
+      "language": {
+        "title": "Language",
+        "description": "Change the language of the app"
+      },
+      "background_image": {
+        "title": "Background Image",
+        "description": "Change the background image of the app, also can be selected in the file cache",
+        "click_to_select": "Click to select"
+      },
+      "background_image_opacity": {
+        "title": "Background Image Opacity",
+        "description": "Change the opacity of the background image"
+      }
+    },
+    "connection": {
+      "title": "Connection",
+      "auto_join": {
+        "title": "Auto join",
+        "description": "Auto join a room when the app is launched"
+      },
+      "stun_servers": {
+        "title": "STUN Servers",
+        "description": "Change the STUN servers of the app, used to establish peer-to-peer connections"
+      },
+      "turn_servers": {
+        "title": "TURN Servers",
+        "description": "If you want to use this app in a NAT environment, you may need to set up TURN servers, and set the same TURN servers on the other client"
+      },
+      "share_servers_with_others": {
+        "title": "Share Servers with Others",
+        "description": "Share the STUN and TURN servers with others when generating the join URL"
+      },
+      "websocket_url": {
+        "title": "Websocket URL",
+        "description": "Change the Websocket URL of the app, this option is only available when the backend is WebSocket"
+      }
+    },
+    "sender": {
+      "title": "File Sender Settings",
+      "enable_clipboard": {
+        "title": "Enable Clipboard",
+        "description": "Enable the clipboard sending function of the sender, after enabling, you can send the clipboard content by pressing Ctrl + V on the chat window, and on mobile devices, you can send it by pasting into the information input box",
+        "unsupported": "Clipboard is not supported, please use in a secure context"
+      },
+      "num_channels": {
+        "title": "NO. of Channels",
+        "description": "The number of channels of the sender, appropriate adjustment may improve the transfer speed"
+      },
+      "chunk_size": {
+        "title": "Chunk Size",
+        "description": "The size of each chunk of the sender"
+      },
+      "block_size": {
+        "title": "Block Size",
+        "description": "The size of each block of the sender"
+      },
+      "max_buffer_amount": {
+        "title": "Max Buffer Amount",
+        "description": "The max buffer amount of the sender"
+      },
+      "ordered": {
+        "title": "Ordered",
+        "description": "When enabled, the sender will send blocks in order"
+      },
+      "compression_level": {
+        "title": "Compression Level",
+        "description": "Change the compression level of the sender, 0 means no compression, 9 means maximum compression, enabling this option may reduce the transfer speed for compressed files",
+        "no_compression": "0 (No Compression)"
+      },
+      "automatic_cache_deletion": {
+        "title": "Automatic cache deletion",
+        "description": "Automatically deletes cache after sending"
+      }
+    },
+    "receiver": {
+      "title": "File Receiver Settings",
+      "max_cached_chunks": {
+        "title": "Max Cached Chunks",
+        "description": "Change the max cached chunks of the receiver"
+      },
+      "automatic_download": {
+        "title": "Automatic download",
+        "description": "Automatic download after receiving"
+      }
+    },
+    "media": {
+      "title": "Media Settings",
+      "description": "Change the media settings of the app",
+      "camera": {
+        "title": "Camera",
+        "description": "Change the camera of the media"
+      },
+      "microphone": {
+        "title": "Microphone",
+        "description": "Change the microphone of the media"
+      },
+      "speaker": {
+        "title": "Speaker",
+        "description": "Change the speaker of the media"
+      },
+      "request_permission": {
+        "camera_title": "Request Camera Permission",
+        "microphone_title": "Request Microphone Permission",
+        "camera_success": "Camera permission granted",
+        "microphone_success": "Microphone permission granted",
+        "description": "Request media permission to use the media settings, if you can't select the media devices after requesting permission, please try to refresh the page",
+        "fallback_description": "Please allow the browser to use the camera and microphone"
+      }
+    },
+    "about": {
+      "title": "About",
+      "reset_options": "Reset Options",
+      "clear_service_worker_cache": "Clear Service Worker Cache"
+    },
+    "advanced_settings": {
+      "title": "Advanced Settings",
+      "advanced_connection": {
+        "title": "Advanced Connection Settings",
+        "relay_only": {
+          "title": "Relay Only",
+          "description": "When enabled, the app will only use the TURN server"
+        }
+      },
+      "advanced_sender": {
+        "title": "Advanced File Sender Settings"
+      },
+      "advanced_receiver": {
+        "title": "Advanced File Recevier Settings"
+      },
+      "stream": {
+        "title": "Video Call Settings",
+        "video_max_bitrate": {
+          "title": "Video Max Bitrate",
+          "description": "Max video bitrate of the stream"
+        },
+        "audio_max_bitrate": {
+          "title": "Audio Max Bitrate",
+          "description": "Max audio bitrate of the stream"
+        },
+        "degradation_preference": {
+          "title": "Degradation Preference",
+          "description": "When the network condition is poor, the application will prioritize video quality or frame rate"
+        }
+      }
+    }
+  },
+  "cache": {
+    "title": "File Cache",
+    "search_input": "Search for cached files...",
+    "usage": "{{value}} used, {{max}} total, {{remaining}} remaining"
+  },
+  "404": {
+    "title": "404 Not Found",
+    "description": "The page you are looking for does not exist, path: {{path}}",
+    "home": "Go to Home"
+  },
+  "client": {
+    "menu": {
+      "connect": "Connect",
+      "connection_status": "Connection Status",
+      "delete_client": "Delete Client",
+      "clipboard": "Clipboard",
+      "options": "Options",
+      "redirect": "Redirect after connection"
+    },
+    "index": {
+      "edit_profile": "Edit Profile",
+      "join_room": "Join Room",
+      "share_room": "Share Room",
+      "leave_room": "Leave Room",
+      "mobile_tip": "Tip: Please tap on the avatar to share room profiles on mobile device",
+      "before_join": {
+        "title": "Create or connect to a room",
+        "description": "Please click the button to create a new room or connect to an existing room"
+      },
+      "connecting": {
+        "title": "Connecting...",
+        "description": "Please wait for the connection to be established"
+      },
+      "after_join": {
+        "title": "Joined Room {{room}}",
+        "description": "Share the room profile to invite others to join the room",
+        "tip": "tip: Tap the avatar to share the room profile on mobile device"
+      }
+    },
+    "message_editor": {
+      "placeholder": "Ctrl + Enter or Shift + Enter to send the message",
+      "mobile_placeholder": "Send message",
+      "paste_tip": "Clipboard paste enabled"
+    },
+    "message_error": "Error occurred",
+    "sync": {
+      "title": "File Sync",
+      "menu": {
+        "refresh": "Refresh",
+        "chat": "Chat"
+      }
+    }
+  },
+  "video": {
+    "title": "Screen Sharing",
+    "device": {
+      "screen": "Screen",
+      "camera": "Camera"
+    },
+    "no_stream": "No Stream",
+    "float": "Float",
+    "global_mute": "Global Mute",
+    "global_unmute": "Global Unmute",
+    "reset_layout": "Reset Layout",
+    "compact_layout": "Compact Layout",
+    "loading_state": {
+      "initial": "Initializing...",
+      "loading": "Loading...",
+      "canplay": "Ready to play",
+      "playing": "Playing",
+      "waiting": "Buffering...",
+      "stalled": "Connection interrupted, retrying...",
+      "error": "Failed to load",
+      "retry": "Retry"
+    }
+  },
+  "browser_unsupported": {
+    "title": "Sorry, your browser is not supported",
+    "reasons": {
+      "browser_version_too_low": "Your browser version is too low",
+      "browser_does_not_support_webrtc": "Your browser does not support WebRTC"
+    },
+    "description": "Please use a modern browser like Chrome, Firefox, Safari, Edge, or Opera. Or turn on the experimental WebRTC features in your browser",
+    "version_support_details": "Version Support Details",
+    "browser": "Browser",
+    "version": "Version"
+  },
+  "common": {
+    "theme_toggle": {
+      "light": "Light Mode",
+      "dark": "Dark Mode",
+      "system": "System"
+    },
+    "join_form": {
+      "title": "Edit Room Info",
+      "description": "Edit the room info here, click confirm to create or join the room.",
+      "client_id": {
+        "title": "Client ID (Read Only)",
+        "description": "The client ID of the room, representing your identity"
+      },
+      "room_id": {
+        "title": "Room ID",
+        "description": "The room ID of the room"
+      },
+      "name": "Name",
+      "avatar_url": "Avatar URL",
+      "password": {
+        "title": "Room Password",
+        "description": "Optional, the password of the room, used to encrypt the signaling messages sent between clients, preventing others from joining, you can click the button to generate a strong password"
+      },
+      "auto_join": "Auto Join Next Time"
+    },
+    "file_table": {
+      "columns": {
+        "name": "Name",
+        "size": "Size",
+        "last_modified": "Last Modified",
+        "status": "Status",
+        "created_at": "Created At",
+        "mime_type": "MIME Type",
+        "progress": "Progress"
+      },
+      "status": {
+        "not_started": "Not Started",
+        "stopped": "Stopped",
+        "transferring": "Transferring",
+        "merging": "Merging",
+        "complete": "Complete",
+        "incomplete": "Incomplete"
+      },
+      "filter": {
+        "clear_filters": "Clear Filters",
+        "selected": "Selected"
+      },
+      "toggle_columns": "Toggle Columns",
+      "no_data": "No Data"
+    },
+    "confirm_delete_files_dialog": {
+      "title": "Delete Files",
+      "description": "Confirm delete these {{count}} files?"
+    },
+    "client_info_dialog": {
+      "title": "Client {{name}} Info",
+      "status": "Status",
+      "client_id": "Client ID",
+      "created_at": "Created At",
+      "stats_reports": "Stats Reports",
+      "candidate_type": "Candidate Type",
+      "leave": "Leave"
+    },
+    "confirm_delete_client_dialog": {
+      "title": "Delete Client",
+      "description": "This operation deletes the client and messages",
+      "content": "Are you really sure you want to delete client {{name}} and all messages?"
+    },
+    "reset_options_dialog": {
+      "title": "Reset Options",
+      "description": "This operation resets the options to default values, but will not clear user data",
+      "content": "Are you really sure you want to reset the options?"
+    },
+    "clear_service_worker_cache_dialog": {
+      "title": "Clear Service Worker Cache",
+      "description": "This operation clears the Service Worker cache",
+      "content": "If you encounter problems after page updates, you can clear the cache and try again",
+      "reload": "Reload the page after clearing"
+    },
+    "preview_dialog": {
+      "title": "Preview",
+      "unsupported_file_type": "Unsupported file type"
+    },
+    "send_item_preview_dialog": {
+      "title": "Send Item",
+      "description": "Are you sure you want to send file {{fileName}} to {{name}}?",
+      "unsupported_file_type": "Unsupported file type"
+    },
+    "status": {
+      "online": "Online",
+      "connecting": "Connecting",
+      "reconnecting": "Reconnecting",
+      "offline": "Offline",
+      "leave": "Leave"
+    },
+    "scan_qrcode_dialog": {
+      "title": "Share Room Profile",
+      "description": "Scan QR Code to connect to this room",
+      "tip": "Right-click or long press to copy the link",
+      "invite": "Invite you to join the room {{room}}"
+    },
+    "action": {
+      "apply": "Apply",
+      "copy": "Copy",
+      "copy_link": "Copy Link",
+      "copy_file_name": "Copy File Name",
+      "copy_as_png": "Copy as PNG",
+      "copy_as_svg": "Copy as SVG",
+      "paste": "Paste",
+      "delete": "Delete",
+      "download": "Download",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "actions": "Actions",
+      "open": "Open",
+      "close": "Close",
+      "change": "Change",
+      "preview": "Preview",
+      "send": "Send",
+      "view": "View",
+      "reset": "Reset",
+      "asc": "Asc",
+      "desc": "Desc",
+      "hide": "Hide",
+      "set_as_background": "Set as Background",
+      "test": "Test",
+      "share": "Share",
+      "forward": "Forward",
+      "request_download": "Request Download",
+      "resume": "Resume",
+      "add_folder": "Add Folder",
+      "check_availability": "Check Availability",
+      "reload": "Reload",
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "select": "Select",
+      "settings": "Settings",
+      "fullscreen": "Fullscreen",
+      "exit_fullscreen": "Exit Fullscreen",
+      "switch_fullscreen": "Switch Fullscreen",
+      "picture_in_picture": "PIP Mode",
+      "exit_picture_in_picture": "Exit PIP Mode",
+      "switch_picture_in_picture": "Switch PIP Mode",
+      "stop": "Stop",
+      "pause": "Pause",
+      "continue": "Continue",
+      "restore": "Restore"
+    },
+    "notification": {
+      "copy_success": "Copy success",
+      "link_copy_success": "Link copied",
+      "link_copy_failed": "Failed to copy link",
+      "reset_options_success": "Options reset successfully",
+      "unknown_error": "Unknown error",
+      "processing_files": "Processing files...",
+      "new_version_available": "New version available",
+      "share_failed": "Share failed, error: {{error}}",
+      "clear_cache_success": "Cache Storage and Service Worker cleared successfully",
+      "clear_cache_failed": "Failed to clear Cache Storage and Service Worker, error: {{error}}"
+    },
+    "forward_dialog": {
+      "title": "Forward items",
+      "placeholder": "Search for clients to forward...",
+      "no_results_found": "No results found"
+    },
+    "about_dialog": {
+      "title": "About Weblink",
+      "description1": "Weblink is a browser-based P2P chat, file transfer, file synchronization and screen sharing tool.",
+      "description2": "It provides progress display, resume, folder transfer, clipboard transfer, file cache, screen sharing, and other features.",
+      "description3": "This project is a pure Web application, no installation is required. If you encounter any instability, please try to refresh the page. Information will not be lost.",
+      "disclaimer": "Disclaimer: This application uses P2P technology, all data is stored in the user's client (browser), the server does not store any user data, only responsible for forwarding signaling. Users should bear the risks of using it at their own risk, and the developers are not responsible for any data loss or privacy breaches.",
+      "star_repo": "If you like this project, please give me a ⭐ on GitHub!",
+      "version": "Version",
+      "author": "Author",
+      "license": "License",
+      "github": "GitHub Repository"
+    },
+    "media_selection_dialog": {
+      "title": "Media Selection",
+      "screen": "Screen",
+      "media_device": "Media Device",
+      "camera": "Camera",
+      "microphone": "Microphone",
+      "speaker": "Speaker",
+      "enable_screen": "Enable Screen",
+      "enable_camera": "Enable Camera",
+      "enable_microphone": "Enable Microphone",
+      "enable_speaker": "Enable Speaker",
+      "no_camera_available": "No camera available",
+      "no_microphone_available": "No microphone available",
+      "no_speaker_available": "No speaker available",
+      "request_camera_permission": "Request Camera Permission",
+      "request_microphone_permission": "Request Microphone Permission",
+      "select_speaker": "Select Speaker (Auto)",
+      "select_microphone": "Select Microphone (Auto)",
+      "select_camera": "Select Camera (Auto)",
+      "open_screen": "Open Screen",
+      "open_media_device": "Open Media Device",
+      "current": "Current",
+      "preview": "Preview",
+      "apply_constraints": "Apply Media Constraints",
+      "apply_constraints_description": "Some constraints may not be supported to change dynamically, please select a new stream to apply",
+      "preset_constraints": "Preset Media Constraints",
+      "microphone_constraints": "Microphone Constraints",
+      "speaker_constraints": "Speaker Constraints",
+      "not_support_display_media": "Your browser does not support display media",
+      "not_support_user_media": "Your browser does not support user media",
+      "video_constraints": "Video Constraints",
+      "constraints": {
+        "noise_suppression": "Noise Suppression",
+        "echo_cancellation": "Echo Cancellation",
+        "auto_gain_control": "Auto Gain Control",
+        "voice_isolation": "Voice Isolation",
+        "suppress_local_audio_playback": "Suppress Local Audio Playback",
+        "max_frame_rate": "Max Frame Rate"
+      }
+    },
+    "nav": {
+      "chat": "Chat",
+      "file_cache": "File Cache",
+      "screen_sharing": "Screen Sharing",
+      "settings": "Settings",
+      "join_room": "Join Room",
+      "leave_room": "Leave Room",
+      "share_link": "Share Link"
+    },
+    "timeago": {
+      "just_now": "Just Now"
+    },
+    "starter": {
+      "starter_name": "Starter",
+      "welcome": "Welcome to weblink, a chat, file transfer, file synchronization and screen sharing tool that can be run directly in the browser.",
+      "tip1": "Please follow these steps to start:\n 1. Set your name and avatar.\n 2. Set the room ID and password to encrypt the signaling messages between clients, preventing others from joining.\n 3. Share the room profile to invite others to join the room.",
+      "tip2": "If you encounter any problems or have any suggestions, please submit an issue on GitHub."
+    },
+    "error_boundary": {
+      "title": "Error Occurred",
+      "description": "Please try to refresh the page or contact the developer, the error message is:",
+      "reset": "Reset"
+    }
+  }
+}
